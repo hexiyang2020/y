@@ -40,7 +40,7 @@ const step = timestamp => {
             obj.has_called_start = true;
             obj.start();
         } else {
-            obj.timedelta = timestamp;
+            obj.timedelta = timestamp - last_timestamp;
             obj.update();
         }
     }
