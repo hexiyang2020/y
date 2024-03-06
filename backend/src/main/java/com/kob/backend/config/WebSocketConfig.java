@@ -1,4 +1,4 @@
-package com.kob.backend.config.filter;
+package com.kob.backend.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

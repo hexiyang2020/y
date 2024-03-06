@@ -18,7 +18,7 @@
 
                         <!-- Modal -->
                         <div class="modal fade" id="add-bot-btn" tabindex="-1">
-                            <div class="modal-dialog modal-xl">
+                            <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                 <div class="modal-header">
                                     <h1 class="modal-title fs-5">创建Bot</h1>
@@ -70,10 +70,10 @@
                                         <button type="button" class="btn btn-danger" @click="remove_bot(bot)">删除</button>
 
                                         <div class="modal fade" :id="'update-bot-modal-' + bot.id" tabindex="-1">
-                                            <div class="modal-dialog modal-xl">
+                                            <div class="modal-dialog modal-lg">
                                                 <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h1 class="modal-title fs-5">创建Bot</h1>
+                                                    <h1 class="modal-title fs-5">修改Bot</h1>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">

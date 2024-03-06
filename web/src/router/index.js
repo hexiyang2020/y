@@ -1,46 +1,109 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import PkIndexView from '../views/pk/PkIndexView'
-import RecordIndexView from '../views/record/RecordIndexView'
-import RanklistIndexView from '../views/ranklist/RanklistIndexView'
+// import PkIndexView from '../views/pk/PkIndexView'
+// import RecordIndexView from '../views/record/RecordIndexView'
+// import RanklistIndexView from '../views/ranklist/RanklistIndexView'
 import UserBotIndexView from '../views/user/bot/UserBotIndexView'
 import NotFoundView from '../views/error/NotFoundView'
 import UserAccountLoginView from '../views/user/account/UserAccountLoginView'
 import UserAccountRegisterView from '../views/user/account/UserAccountRegisterView'
+
+import FrontPageIndex from '../views/frontpage/FrontPageIndex'
+import ReservationIndex from '../views/reservation/ReservationIndex'
+import OrderListIndex from '../views/orderlist/OrderListIndex'
+import UserSpaceIndex from '../views/user/space/UserSpaceIndex'
+import UserInfoIndex from '../views/user/info/UserInfoIndex'
+import UserOrderIndex from '../views/user/order/UserOrderIndex'
 import store from '../store/index'
 
 const routes = [
   {
     path: "/",
     name: "home",
-    redirect: "/pk/",
+    redirect: "/index/",
     meta: {
       requestAuth: true,
     }
   },
   {
-    path: "/pk/",
-    name: "pk_index",
-    component: PkIndexView,
+    path: "/index/",
+    name: "frontpage_index",
+    component: FrontPageIndex,
     meta: {
       requestAuth: true,
     }
   },
   {
-    path: "/record/",
-    name: "record_index",
-    component: RecordIndexView,
+    path: "/reservation/",
+    name: "reservation_index",
+    component: ReservationIndex,
     meta: {
       requestAuth: true,
     }
   },
   {
-    path: "/ranklist/",
-    name: "ranklist_index",
-    component: RanklistIndexView,
+    path: "/orderlist/",
+    name: "orderlist_index",
+    component: OrderListIndex,
     meta: {
       requestAuth: true,
     }
   },
+  {
+    path: "/user/myspace/",
+    name: "user_space_index",
+    component: UserSpaceIndex,
+    meta: {
+      requestAuth: true,
+    }
+  },
+  {
+    path: "/user/info/",
+    name: "user_info_index",
+    component: UserInfoIndex,
+    meta: {
+      requestAuth: true,
+    }
+  },
+  {
+    path: "/user/order/",
+    name: "user_order_index",
+    component: UserOrderIndex,
+    meta: {
+      requestAuth: true,
+    }
+  },
+  // {
+  //   path: "/",
+  //   name: "home",
+  //   redirect: "/pk/",
+  //   meta: {
+  //     requestAuth: true,
+  //   }
+  // },
+  // {
+  //   path: "/pk/",
+  //   name: "pk_index",
+  //   component: PkIndexView,
+  //   meta: {
+  //     requestAuth: true,
+  //   }
+  // },
+  // {
+  //   path: "/record/",
+  //   name: "record_index",
+  //   component: RecordIndexView,
+  //   meta: {
+  //     requestAuth: true,
+  //   }
+  // },
+  // {
+  //   path: "/ranklist/",
+  //   name: "ranklist_index",
+  //   component: RanklistIndexView,
+  //   meta: {
+  //     requestAuth: true,
+  //   }
+  // },
   {
     path: "/user/bot/",
     name: "user_bot_index",

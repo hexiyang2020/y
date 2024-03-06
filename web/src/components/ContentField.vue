@@ -13,6 +13,10 @@
 
 <style>
 div.content-field {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+
+.container {
+  width: 60%;
 }
 </style>
